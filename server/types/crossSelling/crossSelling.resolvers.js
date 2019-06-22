@@ -1,7 +1,7 @@
 import { CrossSelling } from './crossSelling.model'
 
 const crossSelling = (_, args, ctx) => {
-  console.log('Cross Selling Args:', args, ctx)
+  // console.log('Cross Selling Args:', args, ctx)
 
   // const out = CrossSelling.paginate({
   //   univ_num_reference: args.sports
@@ -25,8 +25,6 @@ const crossSelling = (_, args, ctx) => {
       query[d] = { $regex: args.filteredValue[i], $options: 'i' }
     })
   }
-
-  console.log(query, sort)
 
   const out = CrossSelling.paginate(query, {
     offset: args.skip,

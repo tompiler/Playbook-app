@@ -4,8 +4,6 @@ import { GraphQLScalarType } from 'graphql'
 import { Kind } from 'graphql/language'
 
 const newCustomers = (_, args, ctx) => {
-  console.log('New Customer Args:', args, ctx)
-
   const weekYearGrp =
     args.dateRangeAggLevel === 'Week'
       ? { $isoWeekYear: '$creation_date' }

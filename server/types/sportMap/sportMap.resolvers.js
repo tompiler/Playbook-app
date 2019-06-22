@@ -4,7 +4,7 @@ import { GraphQLScalarType } from 'graphql'
 import { Kind } from 'graphql/language'
 
 const sportMap = (_, args, ctx) => {
-  console.log('Sport Map Args:', args, ctx)
+  // console.log('Sport Map Args:', args, ctx)
   const out = SportMap.aggregate([
     {
       $match: {

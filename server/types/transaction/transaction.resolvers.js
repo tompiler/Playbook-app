@@ -4,7 +4,7 @@ import { GraphQLScalarType } from 'graphql'
 import { Kind } from 'graphql/language'
 
 const transactions = (_, args, ctx) => {
-  console.log('Transaction Args:', args, ctx)
+  // console.log('Transaction Args:', args, ctx)
 
   const weekYearGrp =
     args.dateRangeAggLevel === 'Week'
