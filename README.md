@@ -9,7 +9,7 @@
 ## Overview
 
 **tl;dr**:
->*Playbook is an interactive data visualisation app*
+Playbook is an interactive data visualisation app built using D3.js React, GraphQL and MongoDB. React Grid Layout was used for the panel system, and ReactFauxDom for the D3-React mash.
 
 ---
 
