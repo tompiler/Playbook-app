@@ -1,0 +1,28 @@
+
+type ByModel {
+    mdl_num_model_r3: Int,
+    total_items: Float,
+    total_revenue: Float
+}
+
+type ProductSunburstData {
+    idr_final_store: Int!
+    num_univers: Int
+    dpt_num: Int
+    sdp_num: Int
+    fam_num_family: Int
+    byModel: [ByModel]
+    total_items: Float!
+    total_revenue: Float!
+}
+
+type ProductSunburst {
+    idr_final_store: Int
+    data: [ProductSunburstData]
+}
+
+scalar ProductSunburstDate
+
+extend type Query {
+    productSunburst(store: [Int]!, sport: [Int], department: [Int], subDepartment: [Int], family: [Int]): [ProductSunburst]!
+}

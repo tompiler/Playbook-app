@@ -1,0 +1,137 @@
+
+
+.control-parent {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0);
+  transition: all 300ms ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.control-parent:hover {
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(0, 130, 195, 0.6);
+  background-color: rgba(0, 130, 195, 0.1); 
+  transition: border-color 0.3s ease-out background-color 0.3s ease-out;
+  -webkit-transition: border-color 0.3s ease-out background-color 0.3s ease-out;
+  -moz-transition: border-color 0.3s ease-out background-color 0.3s ease-out;
+  -o-transition: border-color 0.3s ease-out background-color 0.3s ease-out;
+}
+
+
+.control-parent:hover .control-active-instructions-chart {
+  color: rgba(0, 130, 195, 0.8);
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.control-parent:hover .control-active-instructions-control {
+  color: rgba(0, 130, 195, 0.8);
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.control-parent:hover .control-active {
+  color: rgba(0, 130, 195, 0.8);
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.control-active {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 100%;
+    transform: translate(-0%, 10%);
+    color: #c5cad3;
+    text-align: top;
+    vertical-align: text-top;
+    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.control-active-instructions-chart {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  transform: translate(-0%, -10%);
+  color: #b6bbc4;
+  margin: 0 auto;
+  vertical-align: middle;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.control-active-instructions-control {
+  position: absolute;
+  top: 86%;
+  left: 5%;
+  transform: translate(-0%, -10%);
+  color: #b6bbc4;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.controlBurgerDark {
+  position: absolute;
+  top: 0;
+  right: -15%;
+  color: #b6bbc4;
+}
+
+
+/* Transitions for Control Select Panels */
+/* instantly hides border when 
+control panel is opened */
+div .control-hidden {
+    border: solid 0px #0082C3;
+}
+
+/* appear - on page load */
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+/* enter */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms linear 500ms;
+}
+
+/* exit */
+.fade-exit {
+    opacity: 1;
+    z-index: 1;
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 1000ms ;
+}
+.fade-exit-done {
+  opacity: 0;
+}

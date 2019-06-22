@@ -1,0 +1,72 @@
+.rt-tbody > .rt-tr-group > .rt-tr {
+    text-align: left;
+    height: 2vh;
+}
+
+.ReactTable .rt-thead.-headerGroups {
+    background: #f5f5f5;
+    font-size: 1.1em;
+}
+
+.rt-thead.-headerGroups > .rt-tr {
+    background: #f5f5f5;
+    border-top: solid 1px #a6a6a6;
+}
+
+.rt-thead.-filters > .rt-tr {
+    border-bottom: solid 1px #a6a6a6;
+}
+
+.crossselling-header-group {
+    font-size: 1.4em;
+    font-weight: 520;
+    line-height: 0.7em;
+}
+
+.crossselling-header-name {
+    font-size: 1.2em;
+    font-weight: 520;
+    line-height: 0.7em;
+
+}
+
+@media only screen and (max-width: 690px) {
+    .crossselling-header-name {
+        font-size: 6px;
+    }
+
+    .crossselling-header-group {
+        font-size: 6px;
+    }
+
+    .ReactTable .-pagination .-btn { 
+        height: 60%;
+        font-size: 1em;
+    }
+}
+
+.ReactTable.-striped .rt-tr.-odd {
+    background: #f5f5f5;
+}
+
+.ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow):hover {
+    background: #edf5fa;
+}
+
+.ReactTable .-pagination .-btn {
+    font-size: 1.5em;
+    color: #5c5c5c;
+}
+
+.pagination-bottom, .-pagination {
+    height: 45px;
+    transition: background-color .25s;
+}
+
+.pagination-bottom:hover {
+    box-shadow: 0 5px 5px rgba(4, 87, 165, 0.4);
+}
+
+.-pagination:hover {
+    box-shadow: 0 5px 5px rgba(4, 87, 165, 0.4);
+}

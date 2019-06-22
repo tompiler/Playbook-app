@@ -1,0 +1,52 @@
+.button {
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    line-height: 30px;
+    border: 1px solid #b1b5bd;
+    border: thin solid grey;
+    border-radius: 3px;
+    background-color: #e9e8e8;
+    padding: 0rem 2rem;
+    margin: 0rem 0.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: rgba(0, 130, 195, 0.514);
+    transition: background-color .25s;
+}
+
+.transactions-button-active {
+    /* border: 1px solid #fff; */
+    border: thin solid grey;
+    background-color: #fff;
+    color: #0082C3;
+    transition: background-color .25s;
+}
+
+.newCustomers-button-active {
+    /* border: 1px solid #fff; */
+    border: thin solid grey;
+    background-color: #fff;
+    color: #0082C3;
+    transition: background-color .25s;
+}
+
+/* 
+.newCustomers .button-active {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #0082C3;
+    transition: background-color .25s;
+} */
+
+.button:hover {
+    background-color: #fff;
+    color: rgba(0, 130, 195, 0.814);
+    transition: color background-color .25s;
+}

@@ -1,0 +1,23 @@
+
+type NewCustomerData {
+    year: Int!
+    month: Int!
+    day: Int
+    week: Int
+    weekYear: Int
+    nb_total: Int!
+    nb_online: Int!
+    nb_cube_in_store: Int!
+    nb_adhesion_light: Int!
+}
+
+type NewCustomer {
+    idr_final_store: Int
+    data: [NewCustomerData]
+}
+
+scalar newCustomerDate
+
+extend type Query {
+    newCustomers(stores: [Int], dateStart: newCustomerDate, dateEnd: newCustomerDate, dateRangeAggLevel: String): [NewCustomer]!
+}

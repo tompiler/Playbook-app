@@ -1,0 +1,28 @@
+
+type CrossSellingData {
+    mdl_num_modele_r3_reference: String!
+    name_model_reference: String!
+    univ_num_reference: Int!
+    mdl_num_modele_r3_associe1: String!
+    name_model_associe1: String!
+    univ_num_associe1: Int!
+    mdl_num_modele_r3_associe2: String!
+    name_model_associe2: String!
+    univ_num_associe2: Int!
+    mdl_num_modele_r3_associe3: String!
+    name_model_associe3: String!
+    univ_num_associe3: Int!
+    lien_media: String!
+}
+
+type CrossSelling {
+    total: Int!
+    limit: Int!
+    offset: Int!
+    docs: [CrossSellingData]!
+}
+
+
+extend type Query {
+    crossSelling(sports: [Int], skip: Int, limit: Int, sortedVar: [String], sortedDirection: [Int], filteredVar: [String], filteredValue: [String]): CrossSelling!
+}

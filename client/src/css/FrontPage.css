@@ -1,0 +1,80 @@
+.wrapperd {
+    position: relative;
+    border: 3px solid #0082C3;
+    border-radius: 10px;
+    padding: 1vw 1vw;
+    height: 10vw;
+    background: #0082C3;
+}
+
+.svg {
+    position: absolute;
+}
+
+.frontpage-logo {
+    position: fixed;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.frontpage-menu-outer {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 70%;
+    /* border: 2px dashed forestgreen; */
+    border-radius: 3px;
+}
+
+.frontpage-menu-logo {
+    position: relative;
+    text-align: center;
+    vertical-align: center;
+    /* border: 2px solid red; */
+}
+
+.frontpage-menu-playbook-logo {
+    position: relative;
+    margin: 0px 0px;
+    text-align: center;
+    vertical-align: center;
+    /* border: 2px solid red; */
+    font-size: 5vw;
+    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    color: #203458;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.frontpage-menu-button {
+    position: relative;
+    padding: 10px;
+    margin: 35px 0px;
+    font-size: 4vw;
+    color: #59606d;
+    font-style: italic;
+    text-align: center;
+    vertical-align: center;
+    font-family: Arial, sans-serif;
+    background: rgba(0,0,0,0.07);
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.frontpage-menu-button:hover {
+    background: #dce2eccc;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.frontpage-link {
+    text-decoration: none;
+}
+
+
+

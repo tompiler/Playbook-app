@@ -1,0 +1,98 @@
+.counties {
+  fill: none;
+}
+
+.map-background {
+  fill: none;
+  pointer-events: all;
+}
+
+.sportMap {
+  position: relative;
+  vertical-align: top;
+  display: inline;
+  overflow: hidden;
+}
+
+.sportMap-chart {
+  position: fixed;
+  display: inline;
+  overflow: hidden;
+}
+
+.sportMap > div {
+  float: left;
+  /* position: absolute; */
+  display: block;
+  overflow: hidden;
+}
+
+.sportMap-legend {
+  position: fixed;
+}
+
+.sportMap-legend {
+  position: fixed;
+}
+
+.sportMap-legend > div {
+  float:left;
+}
+
+.sportMap-legend-body-rect {
+  fill: rgba(255, 255, 255, 0.9)
+}
+
+.postcode_areas {
+  stroke: white;
+  stroke-width: 0.5px;
+}
+
+.sportMap-legend-body-key-item, .sportMap-legend-body-selected-info-rect, .sportMap-legend-body-hover-info-rect{
+  stroke: grey;
+  stroke-width: 0.5px;
+}
+
+.pc_area_selected {
+  stroke: rgb(255, 145, 0);
+  stroke-width: 4px
+}
+
+
+.rc-slider-track {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  border-radius: 6px;
+  background-color: #0082c3;
+}
+
+.rc-slider-rail {
+  background-color: #a8a8a8;
+}
+
+.rc-slider-handle {
+  border: solid 2px #0082c3;
+}
+
+.rc-slider-handle:focus {
+  border-color: #0082c3;
+  box-shadow: 0 0 0 5px #96dbfa;
+  outline: none;
+}
+
+.rc-slider-handle-click-focused:focus {
+  border-color: #0082c3;
+  box-shadow: unset;
+}
+
+.rc-slider-handle:hover {
+  border-color: #0082c3;
+}
+
+.rc-slider-handle:active {
+  border-color: #0082c3;
+  box-shadow: 0 0 5px #57c5f7;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}

@@ -1,0 +1,107 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  /* background: #f4faff */
+  background: #e7eefc; /*linear-gradient(to top,#fefff4, #e7eefc, #fefff4);*/
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+#root {
+  height: 100%;
+  /* background-image: url("../../../cover.png"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-color: rgba(0,0,0,0.2); */
+  /* background-position: right -150px bottom 0px; */
+  /* opacity: 0.2; */
+  width: 100%;
+}
+
+.frontpage-parent {
+  height: 100%;
+}
+
+.dimensionWrapper {
+  z-index: 3;
+}
+
+.react-grid-layout {
+  position: relative;
+  transition: height 400ms ease;
+}
+.react-grid-item {
+  transition: all 0ms ease;
+  transition-property: left, top;
+  background-color: #fff;
+  /* border: dashed 1px #0082C3; */
+  border-radius: 8px;
+
+}
+
+.react-grid-item.cssTransforms {
+  transition-property: transform;
+}
+.react-grid-item.resizing {
+  z-index: 1;
+  will-change: width, height;
+}
+
+.react-grid-item.react-draggable-dragging {
+  transition: none;
+  z-index: 3;
+  will-change: transform;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: #78c2ff;
+  opacity: 0.2;
+  transition-duration: 100ms;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.react-grid-item > .react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 5px;
+  right: 5px;
+  cursor: se-resize;
+}
+
+.react-grid-item > .react-resizable-handle::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.react-resizable {
+  position: relative;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 5px;
+  right: 5px;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iNnB4Ij48ZyBvcGFjaXR5PSIwLjMwMiI+PHBhdGggZD0iTSA2IDYgTCAwIDYgTCAwIDQuMiBMIDQgNC4yIEwgNC4yIDQuMiBMIDQuMiAwIEwgNiAwIEwgNiA2IEwgNiA2IFoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9zdmc+');
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  cursor: se-resize;
+}

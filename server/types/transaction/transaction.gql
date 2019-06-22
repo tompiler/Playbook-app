@@ -1,0 +1,23 @@
+
+type TransactionData {
+    year: Int!
+    month: Int!
+    day: Int
+    week: Int
+    weekYear: Int
+    total_transactions: Int!
+    total_revenue: Float!
+    avgBasket: Float!
+}
+
+type Transaction {
+    idr_final_store: Int
+    data: [TransactionData]
+}
+
+scalar TransactionDate
+
+type Query {
+    transactions(stores: [Int], sports: [Int], channels: [Int], identified: [Int], dateStart: TransactionDate, dateEnd: TransactionDate, dateRangeAggLevel: String): [Transaction]!
+}
+

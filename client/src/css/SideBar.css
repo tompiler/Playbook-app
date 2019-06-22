@@ -1,0 +1,207 @@
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  /* overflow: hidden; */
+  z-index: 97;
+}
+
+
+.bm-menu-wrap {
+  top: 46px;
+  padding-bottom: 46px;
+}
+
+
+/* Individual item */
+.menu-item {
+  /* display: inline-block; */
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  /* color: #d1d1d1; */
+  color: #474747;
+  transition: color 0.1s;
+  width: 100%; 
+}
+
+.menu-item .sidebar-heading {
+  font-size: 20px;
+  padding: 0.4em 0 .2em 0;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+.menu-item .sidebar-sub-heading {
+  font-size: 16px;
+  padding: 0.3em 0 .4em 0;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+.sidebar-heading-info {
+  font-size: 28px;
+  padding: 0em 0 0.2em 0;
+}
+
+.sidebar-heading-info-instructions {
+  font-size: 14px;
+  padding: .5em 0em .5em 0em;
+}
+
+.menu-item:link {
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.menu-item .heading :link {
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.menu-item:hover {
+  /* color: white; */
+  color: #1b1b1b;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  /* background-image: linear-gradient(to top,#161b26, #2b3547);  */
+  background-image: linear-gradient(to top,#ffffff, #f1f1f8); 
+  /* background: #181d26; */
+  padding: 2.5em 1.5em 0;
+  font-size: 1em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 1);
+}
+
+.store-select {
+  position: relative;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+
+.select-selected {
+  background-color: green
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.form {
+  margin: 0 auto;
+  padding: 100px 30px 0;
+
+  @media (min-width: 800px) {
+    max-width: 60%;
+  }
+}
+
+.input-range {
+  margin-bottom: 160px;
+}
+
+
+
+/* Transactions Menu */
+/* react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month */
+.react-daterange-picker__inputGroup {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.react-daterange-picker {
+  border-radius: 3px;
+  background: white;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+.react-daterange-picker__wrapper {
+  padding: 0px 15px;
+  border-radius: 3px;
+  line-height: 30px;
+}
+
+.react-daterange-picker__calendar {
+  z-index:30;
+}
+
+.react-daterange-picker--closed .react-daterange-picker--enabled {
+  border-radius: 3px;
+}
+
+.react-date-picker__inputGroup__divider {
+  color: black;
+
+}
+
+.react-daterange-picker__inputGroup__input {
+  color: #0082C3;
+  margin: 0px 2px 0px 2px;
+  padding: 0px 2px 0px 2px;
+  text-align: center;
+}
+.react-daterange-picker__inputGroup__leadingZero {
+  color: #0082C3;
+  margin: 0px 0px 0px 5px;
+}
+
+.react-calendar__month-view__weekdays {
+  color: black;
+}
+

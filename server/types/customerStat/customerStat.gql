@@ -1,0 +1,18 @@
+
+type CustomerStat {
+    idr_final_store: Int!,
+    under_25: Float!,
+    btw_25_35: Float!,
+    btw_35_45: Float!,
+    btw_45_55: Float!,
+    over_55: Float!,
+    homme: Float!,
+    femme: Float!,
+    nb_users: Int!,
+    nb_new: Int!,
+    nb_active: Int!
+}
+
+extend type Query {
+    customerStats(store: Int): [CustomerStat]!
+}

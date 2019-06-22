@@ -1,0 +1,15 @@
+
+type SportMapData {
+    postcode_area: String!
+    total_revenue: Float!
+}
+
+type SportMap {
+    data: [SportMapData]
+}
+
+scalar sportMapDate
+
+extend type Query {
+    sportMap(sport: Int, dateStart: sportMapDate, dateEnd: sportMapDate): [SportMap]!
+}

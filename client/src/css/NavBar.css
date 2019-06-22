@@ -1,0 +1,187 @@
+.navbar {
+    width: 100%;
+    /* background-image: linear-gradient(to right,#0082c3, #fff, #0082c3);  */
+    background-color: #0082c3;
+    overflow: hidden;
+    height: 46px;
+    display: block;
+    /* position: fixed;
+    top: 0;
+    */
+    z-index: 1200; 
+}
+
+.navbarLink {
+  float: top;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.linkDiv a {
+  float: top;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.linkDiv {
+  vertical-align: middle;
+  padding: 15px 15px 25px;
+  line-height: 14px;
+  height: 40px;
+  border-bottom: solid 6px rgba(0,0,0,0);
+  display: inline-block;
+}
+
+.linkDiv:hover {
+  display: inline-block;
+  border-bottom: solid 6px #ffa85b
+}
+
+
+.controlBurger {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 2px;
+  vertical-align: bottom;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  line-height: 0px;
+}
+
+
+.logoDiv {
+  margin-right: 15px;
+  position: relative;
+  vertical-align: top;
+  background-color: rgba(0,0,0,0);
+  border-bottom: solid 6px rgba(0,0,0,0);
+  display: inline-block;
+}
+
+/* .logoDiv:hover {
+  border-bottom: solid 6px #ffa85b;
+} */
+
+.logo {
+  float: left;
+  line-height: 0px;
+  /* background-color: #fff; */
+}
+
+/* Parent div of "Controls" button in top right */
+.controlDiv { 
+  position: relative;
+  float: right;
+  border-bottom: solid 6px rgba(0,0,0,0);
+}
+
+.controlDiv:hover {
+  border-bottom: solid 6px #ffa85b;
+}
+
+/* Link element of "Controls" button in top right */
+.controlDivLink {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 9px 15px;
+  line-height: 18px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 690px) {
+    .controlDivLink {
+    width: 100%;
+    font-size: 14px;
+    line-height: 0px;
+    text-align: center;
+    float: right;
+  }
+
+  /* Fa Bars element in Control Div */
+  .bars {
+    display: inline;
+    font-size: 20px;
+    line-height: 0px;
+    padding: 2px 4px 2px 0px;
+    z-index: 10;
+  }
+}
+
+
+@media only screen and (max-width: 690px) {
+
+  .navbarLink {
+    /* display: block; */
+    width: 100%;
+    font-size: 0px;
+    margin: auto auto;
+
+  }
+
+  .controlBurgerContainer {
+    display: inline;
+  }
+
+  .controlBurger {
+    display: inline;
+    color: #fff;
+  }
+
+  .logoCenter {
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 0px;
+    font-size: 0px;
+    overflow: auto;
+  }
+  
+  .logoDiv {
+    
+    font-size: 0px;
+    margin: 0px 33% 0px 33%;
+    position: absolute;
+    display: block;
+    /* left: 50%; */
+    top: 0;
+    background-color: #0082C3;
+    /* vertical-align: middle; */
+    overflow: auto;
+  }
+
+
+  .logoDiv {
+    border-bottom: solid 0px rgba(0,0,0,0);
+  }
+
+  .logoDiv .logoCenter:hover {
+    border-bottom: solid 6px #ffa85b;
+
+  }
+
+  .logo {
+      width: 100%;
+      font-size: 14px;
+      /* background-color: #0082C3; */
+  }
+
+  .linkDiv {
+    display: none
+  }
+
+}
