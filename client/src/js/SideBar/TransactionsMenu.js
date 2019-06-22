@@ -189,13 +189,13 @@ class TransactionsMenu extends React.Component {
     const minDate = () => {
       if (dateRangeAggLevel === 'Month') {
         return new Date(
-          lastUpdated.getFullYear() - 2,
+          lastUpdated.getFullYear() - 1,
           lastUpdated.getMonth(),
           1
         )
       } else if (dateRangeAggLevel === 'Day' || dateRangeAggLevel === 'Week') {
         return new Date(
-          lastUpdated.getFullYear() - 2,
+          lastUpdated.getFullYear() - 1,
           lastUpdated.getMonth(),
           lastUpdated.getDate()
         )

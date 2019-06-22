@@ -92,7 +92,7 @@ class SportMapMenu extends React.Component {
             width={width}
             margin={margin}
             min={0}
-            max={22}
+            max={11}
             pushable={true}
             // defaultValue={{ min: 13, max: 24 }}
             onChange={console.log}

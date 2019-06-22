@@ -19,8 +19,8 @@ class RangeSlider extends React.Component {
   componentDidMount() {
     const lastUpdated = new Date(sportMap_map['last_updated'])
     const dateStart = new Date(
-      lastUpdated.getFullYear() - 2,
-      lastUpdated.getMonth() + 1,
+      lastUpdated.getFullYear() - 1,
+      lastUpdated.getMonth(),
       1
     )
 
@@ -73,7 +73,7 @@ class RangeSlider extends React.Component {
 
     const lastUpdated = new Date(sportMap_map['last_updated'])
     const dateStart = new Date(
-      lastUpdated.getFullYear() - 2,
+      lastUpdated.getFullYear() - 1,
       lastUpdated.getMonth() + 1,
       1
     )
@@ -97,7 +97,7 @@ class RangeSlider extends React.Component {
           xTicks.indexOf(this.formatTimeMonth(dateRange[0])),
           xTicks.indexOf(this.formatTimeMonth(dateRange[1])) + 1
         ]
-      : [13, 23]
+      : [0, 11]
 
     return (
       <React.Fragment>
